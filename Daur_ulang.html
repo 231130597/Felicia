@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daur_ulang</title>
+    <style>
+        li.list {
+            list-style: none;
+            text-align: center;
+            font-size: medium;
+            margin-top: 11px;
+            border: 1px solid white;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+        ul.list{
+            margin-bottom: 10px;
+        }
+        ul.list{
+            width: 300px;
+            height: 100px;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        ul.list :hover{
+        background-color: #eee;
+        }
+        h3{
+            height: 5px;
+            margin: -12px;
+            margin-left: 10px;
+            float: left;
+        }
+        h4{
+            height: 5px;
+            margin: 15px;
+        }
+        img.awan{
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+            margin-left: 20px;
+        }
+        img.daur{
+            width: 160px;
+            height: 160px;  
+            margin-right: 25px;
+            margin-left: 25px;
+            margin-top: 16px;
+        }
+        img.GPS{
+            width: 25px;
+            height: 25px;  
+            margin-right: 15px;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        img.lokasi{
+            width: 25px;
+            height: 25px;  
+            margin-right: 15px;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        img.sampah{
+            width: 130px;
+            height: 110px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        div.side2{
+            height: 700px;
+            background-color: rgb(206, 203, 186);
+            margin: 0;
+        }
+        div.other{
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            margin-left: 55px;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 25px;
+        }
+        div.container{
+            display: flex;
+        }
+        div.container3{
+            display: flex;
+        }
+        div.container2{
+            display: flex;
+            text-align: center;
+        }
+        div.text-container{
+            display: flex;
+            flex-direction: column;
+        }
+        div.main{
+            width: 100%;
+            height: 700px;
+            background-color: darkgreen;
+            margin: 0;
+        }
+        div.search{
+            margin: 10px;
+            width: 950px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 20px;
+        }
+        div.topic{
+            display: flex;
+            width: 950px;
+            height: 200px;
+            margin-top: 25px;
+            margin-left: 20px;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
+            border-radius: 20px;
+        }
+        div.topic2{
+            width: 280px;
+            height: 350px;
+            margin-top: 25px;
+            margin-left: 20px;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
+            border-radius: 20px;
+        }
+        div.lokasi{
+            margin: 10px;
+            width: 240px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 15px;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 20px;
+        }
+        div.lokasi2{
+            display: flex;
+            margin: 10px;
+            width: 240px;
+            height: 60px;
+            margin-top: 20px;
+            margin-left: 15px;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 20px;
+        }
+        div.lokasi3{
+            display: flex;
+            margin: 10px;
+            width: 240px;
+            height: 60px;
+            margin-top: 20px;
+            margin-left: 15px;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 20px;
+        }
+        div.text-container2{
+            flex-direction: column;
+        }
+        p.text2{
+            margin: 10px;
+            margin-top: 6px;
+        }
+        div.topic3{
+            width: 650px;
+            height: 350px;
+            margin-top: 25px;
+            margin-left: 20px;
+            border: 2px solid #f5f5dc;
+            background-color: rgb(206, 203, 186);
+            border-radius: 20px;
+        }
+        div.search2{
+            margin: 10px;
+            width: 610px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 15px;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 20px;
+        }
+        div.search3{
+            display: flex;
+            margin: 10px;
+            width: 610px;
+            height: 110px;
+            margin-top: 20px;
+            margin-left: 15px;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 20px;
+        }
+        h1.text2{
+            font-size: 30px;
+        }
+        p.text{
+            margin: 10px;
+            margin-top: 6px;
+        }
+        p.description{
+            line-height: 16px;
+        }
+        p.R{
+            margin-left: 25px;
+        }
+        h4.lokasi{
+            margin: 0;
+            margin-top: 10px;
+        }
+        h5.lokasi{
+            font-size: 10px;
+            font-weight: lighter;
+        }
+        h4.sampah{
+            margin-top: 10px;
+        }
+        h5.sampah{
+            font-size: 10px;
+            font-weight: lighter;
+            margin-top: 20px;
+            margin-left: 16px;
+        }
+        a{
+        display: block;
+        text-decoration: none;
+        color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side2">
+            <div class="other">
+                <img class="awan" src="./awan.jpg" alt="">
+                <h3 class="center">32°C</h3>
+                <h4 class="center">Berawan</h4>
+            </div>
+        <ul class="list">
+            <li class="list"><a href="home.html">Home</a></li>
+            <li class="list"><a href="page2.html">Fitur</a></li>
+            <li class="list"><a href="Profile.html">Profile</a></li>
+            <li class="list"><a href="Instruction.html">Instruction</a></li>
+        </ul> 
+        </div> 
+            <div class="main">
+                <div class="search">
+                    <p class="text">Search</p>
+                </div>
+                <div class="topic">
+                    <img class="daur" src="Pengolaan sampah.png" alt="">
+                    <div class="text-container">
+                    <h1 class="text2">Daur Ulang</h1>
+                    <p class="description">Informasi tentang cara mendaur ulang berbagai <br>jenis bahan, termasuk plastik, kertas, logam, <br>dan kaca</p>
+                </div>    
+                </div>
+                <div class="container3">    
+                <div class="topic2">
+                    <div class="lokasi">
+                        <p class="text2">Location...</p>
+                    </div>
+                    <div class="lokasi2">
+                        <img class="GPS" src="GPS.png" alt="">
+                        <div class="text-container2">
+                            <h4 class="lokasi">Lokasimu saat ini</h4>
+                            <h5 class="lokasi">Jl. Sutomo Sp. Bogor, Kota Medan</h5>
+                        </div>
+                    </div>
+                    <p class="R">Riwayat Pencarian</p>
+                    <div class="lokasi3">
+                        
+                        <img class="lokasi" src="Location.png" alt="">
+                        <div class="text-container2">
+                            <h4 class="lokasi">Bank Sampah Arafah</h4>
+                            <h5 class="lokasi">Jl. Bilal Ujung No.288B, Kota Medan</h5>
+                        </div>
+                    </div> 
+                </div> 
+                <div class="topic3">
+                    <div class="search2">
+                        <p class="text2">Search...</p>
+                    </div>
+                    <div class="search3">
+                        <img class="sampah" src="Sampah Plastik.jpg" alt="">
+                        <div class="text-container2">
+                            <h4 class="sampah">Plastik</h4>
+                            <h5 class="sampah">Pencemaran lingkungan oleh sampah plastik diantaranya berasal dari <br>penggunaan produk plastik kemasan, limbah rumah tangga maupun <br>industri yang terus terbentuk dalam jumlah besar secara berulang.</h5>
+                        </div>
+                    </div>
+                    <div class="search3">
+                        <img class="sampah" src="Sampah Kertas.jpeg" alt="">
+                        <div class="text-container2">
+                            <h4 class="sampah">Kertas</h4>
+                            <h5 class="sampah">Tanpa pemilahan, sampah kertas dapat mempercepat terjadinya perubahan <br>iklim. Kertas yang bersifat organik dapat bercampur dengan sampah tipe <br>lain, yaitu anorganik.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+                
+            
+        
+</body>
+</html>
