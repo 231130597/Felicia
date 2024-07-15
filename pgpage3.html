@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Pembuangan Sampah Sembarangan</title>
+    <style>
+        li.list {
+            list-style: none;
+            text-align: center;
+            font-size: medium;
+            margin-top: 11px;
+            border: 1px solid white;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+        ul.list{
+            margin-bottom: 10px;
+        }
+        ul.list{
+            width: 300px;
+            height: 100px;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        ul.list :hover{
+        background-color: #eee;
+        }
+        h3{
+            height: 5px;
+            margin: -12px;
+            margin-left: 10px;
+            float: left;
+        }
+        h4{
+            height: 5px;
+            margin: 15px;
+        }
+        p.description{ 
+            margin-top: 2px;
+            margin-left: 470px;
+            color: white    ;
+            border-radius: 5px;
+        }
+        img.awan{
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+            margin-left: 20px;
+        }
+        
+        div.side2{
+            height: 900px;
+            background-color: rgb(206, 203, 186);
+            margin: 0;
+        }
+        div.other{
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            margin-left: 55px;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 25px;
+        }
+        div.container{
+            display: flex;
+        }
+        div.main{
+            width: 100%;
+            height: 900px;
+            background-color: darkgreen;
+            margin: 0;
+        }
+        div.search{
+            margin: 10px;
+            width: 950px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 20px;
+        }
+        
+        p.text{
+            margin: 10px;
+            margin-top: 6px;
+        }
+        h3.center{
+            text-align: center;
+        }
+        h4.center{
+            text-align: center;
+        }
+        img.kateg{
+            width: 180px;
+            height: 180px;  
+            margin-top: 11px;
+            margin-left: 400px;
+        }
+        div.border{
+            width: 70%;
+            margin: 10px;
+            margin-top: 1px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        div.box{
+            width: 70%;
+            height: 25px;
+            background-color: white;
+            margin: 5px;
+            border-radius: 5px;
+            color: black;
+            padding: 20px;
+        }
+        p.boxx{
+            color: white;
+            margin: auto;
+        }
+        div.des{
+            width: 70%;
+            height: 80px;
+            background-color: white;
+            margin: 5px;
+            border-radius: 5px;
+            color: black;
+            padding: 20px;
+        }
+        a{
+        display: block;
+        text-decoration: none;
+        color: #333;
+        }
+        .upload-container {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: transparent;
+            margin-top: -100px;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side2">
+            <div class="other">
+                <img class="awan" src="./awan.jpg" alt="">
+                <h3 class="center">32°C</h3>
+                <h4 class="center">Berawan</h4>
+            </div>
+        <ul class="list">
+            <li class="list"><a href="home.html">Home</a></li>
+            <li class="list"><a href="page2.html">Fitur</a></li>
+            <li class="list"><a href="Profile.html">Profile</a></li>
+            <li class="list"><a href="Instruction.html">Intruction</a></li>
+        </ul> 
+        </div> 
+            <div class="main">
+                <div class="search">
+                    <p class="text">Search</p>
+                </div>
+                <div class="container3">
+                        <img class="kateg" src="./pakaian.png" alt="">
+                        <div class="text-container">
+                        <br>
+                        <p class="description">Pakaian</p>
+                </div>
+                <div class="border">
+                    <p class="boxx">Nama Produk <div class="box" contenteditable="true"> </div></p>
+                    <p class="boxx">Jenis Produk <div class="box" contenteditable="true"> </div> </p>
+                    <p class="boxx">Qty Produk <div class="box" contenteditable="true"> </div></p>
+                    <p class="boxx">Kerugian <div class="box" contenteditable="true"> </div></p>
+                    <p class="boxx">Deskripsi <div class="des" contenteditable="true"> </div></p>
+                </div>
+                <div class="upload-container">
+                  <br>
+                  <button style="background-color: beige;" id="nextButton"><b>Lanjutkan</b></button>
+              </div>
+                <div></div>
+            </div>  
+        </div>
+        <script>
+              nextButton.addEventListener('click', function() {
+                alert("Laporan telah tersimpan")
+                window.location.href = 'pgpage4.html' });
+        </script>
+        
+    </body>
+</html>
