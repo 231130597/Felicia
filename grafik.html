@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pemantauan Emisi</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+    <h1>Pemantauan Emisi</h1>
+    <div id="emission-chart" style="width:50%; height:400px;"></div>
+    <script>
+        // Data dummy untuk emisi, biasanya data ini diambil dari API atau database
+        const emissionData = {
+            categories: ['Logam', 'Timah', 'Karon dioksida (CO2)', 'Sulfur dioksida (SO2)', 'Timbal', 'Merkuri'],
+            series: [{
+                name: 'Emisi',
+                data: [40, 20, 90, 80, 100, 10]
+            }]
+        };
+
+        // Fungsi untuk membuat grafik
+        function createChart(container, data) {
+            Highcharts.chart(container, {
+                chart: {
+                    type: 'bar' // Jenis grafik, bisa diganti menjadi 'bar', 'pie', dll.
+                },
+                title: {
+                    text: 'Pemantauan Emisi'
+                },
+                xAxis: {
+                    categories: data.categories
+                },
+                yAxis: {
+                    title: {
+                        text: 'Jumlah Emisi (%)'
+                    }
+                },
+                series: data.series
+            });
+        }
+
+        // Inisialisasi grafik setelah dokumen siap
+        document.addEventListener('DOMContentLoaded', function () {
+            createChart('emission-chart', emissionData);
+        });
+    </script>
+</body>
+</html>
