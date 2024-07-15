@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h5{
+            height: 447px;
+        }
+        div.circle2{
+            text-align: left;
+        }
+        div.gabung{
+            text-align: center;
+            font-size: 100px;
+        }
+        div.container{
+            background-color: rgb(206, 203, 186);
+            height: 2400px;
+            width: 100%
+        }
+        div.circle{
+            text-align: right;
+            height: 900px;
+        }
+        
+        h1{
+            padding: 10px ;
+            margin: 0px;
+            text-align: center;
+            font-size: 100%;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        img.logo{
+            padding: 50px;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+        }
+        h3{
+            padding: 7spx ;
+            margin: 0px;
+            text-align: center;
+            color: white;
+            font-family: cursive;
+            font-size: 50px;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 1;
+            transition: opacity 1s ease-out;
+        }
+        .container.hidden {
+            opacity: 0;
+        }
+    </style>
+    <title>Splash Screen</title>
+</head>
+<body>
+    <div class=container>
+        <div class="circle">
+            <img src="./lingkaran.png" alt="">
+        </div>
+        <div class="gabung">
+            <img class="logo" src="./logo new.png" alt="">
+            <h1>Eco Green</h1>
+            <h3>Keep it clean, keep it green</h3>
+        </div>
+        <div class="circle2">
+            <h5></h5>
+            <img src="./lingkaran dua.png" alt="">
+        </div>
+    </div>
+    <script>
+        setTimeout(function() {
+            document.querySelector('.container').classList.add('hidden');
+            setTimeout(function() {
+                window.location.href = "Log_in.html";
+            }, 1000); 
+        }, 3000); 
+    </script>
+</body>
+</html>
